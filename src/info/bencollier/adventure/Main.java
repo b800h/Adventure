@@ -28,6 +28,9 @@ public class Main {
         items.add(new Item(loc1, "Lamp", false, "A bronze lamp. It shines as though lit by magic."));
         items.add(new Item(loc1, "Letter", true, "Dear player, it is your task to amass 100 gold coins, and give them to the wise elf. Good luck!"));
 
+        // Create NPCs
+
+
         // Initialise game
 
         Game game = new Game(loc1, items, locations);

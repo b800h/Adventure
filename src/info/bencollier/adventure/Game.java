@@ -118,9 +118,9 @@ public class Game {
 
     public void inventory(String item) {
         System.out.println("You are carrying:");
-        for (Item drop_item: items) {
-            if (drop_item.carried) {
-                System.out.println(drop_item.name);
+        for (Item inventory_item: items) {
+            if (inventory_item.carried) {
+                System.out.println(inventory_item.name);
             }
         }
     }
@@ -134,7 +134,7 @@ public class Game {
 
     public void examine(String item) {
         for (Item examine_item: items) {
-            if (examine_item.carried || examine_item.location == location) {
+            if (examine_item.name.equals(item) && (examine_item.carried || examine_item.location == location)) {
                 System.out.println(examine_item.description);
             }
         }
